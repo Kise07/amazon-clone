@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import PageviewRoundedIcon from "@mui/icons-material/PageviewRounded";
+import SearchIcon from "@material-ui/icons/Search";
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
       <div className="header-search">
         <input className="header--searchInput" type="text" />
         {/* Material UI */}
-        <PageviewRoundedIcon className="header--searchIcon" />
+        <SearchIcon className="header--searchIcon" />
       </div>
 
       <div className="header--nav">
