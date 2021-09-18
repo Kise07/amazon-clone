@@ -1,7 +1,24 @@
 .header {
-    background-color: #000 ;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.header__logo {
-    width: 100px;
+.header--logo {
+  width: 100px;
+  margin: 0 20px;
+  margin-top: 18px;
+  object-fit: contain;
+}
+
+.header--searchIcon {
+  color: #F3A846;
+}
+
+.header--option {
+  color: white;
 }
