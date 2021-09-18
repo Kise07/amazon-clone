@@ -15,10 +15,37 @@
   object-fit: contain;
 }
 
+.header--search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.header--searchInput {
+  padding: 10px;
+  height: 14px;
+  border: none;
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
 .header--searchIcon {
-  background-color: #F3A846;
+  background-color: #f3a846;
+  padding: 5px;
+  height: 22px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.header--nav {
+  display: flex;
+  justify-content: space-betweens;
 }
 
 .header--option {
   color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 10px;
 }

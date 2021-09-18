@@ -11,7 +11,7 @@ function Header() {
         alt="amazon"
       />
 
-      <div className="header-search">
+      <div className="header--search">
         <input className="header--searchInput" type="text" />
         {/* Material UI */}
         <SearchIcon className="header--searchIcon" />
