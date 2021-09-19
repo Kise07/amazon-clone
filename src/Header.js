@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function Header() {
@@ -12,12 +12,12 @@ function Header() {
         src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
         alt="amazon"
       />
-      <LocationOnIcon />
+      <LocationOnOutlinedIcon />
 
-      <div className="header--text">
+      <span className="header--text">
         <span className="header--optionLineOne">Hello</span>
         <span className="header--optionLineTwo">Select Your Address</span>
-      </div>
+      </span>
 
       <div className="header--search">
         <input className="header--searchInput" type="text" />
