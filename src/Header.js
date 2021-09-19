@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function Header() {
@@ -11,6 +12,12 @@ function Header() {
         src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
         alt="amazon"
       />
+      <LocationOnIcon />
+
+      <div className="header--text">
+        <span className="header--optionLineOne">Hello</span>
+        <span className="header--optionLineTwo">Select Your Address</span>
+      </div>
 
       <div className="header--search">
         <input className="header--searchInput" type="text" />
