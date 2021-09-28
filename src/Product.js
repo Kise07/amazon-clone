@@ -14,12 +14,12 @@ function Product() {
         </p>
 
         <img
+          className="product--image"
           src="https://images-na.ssl-images-amazon.com/images/I/41SMlI+1PrL._SX331_BO1,204,203,200_.jpg"
           alt=""
         />
-
-        <button>Add to Cart</button>
       </div>
+        <button className="product--button">Add to Cart</button>
     </div>
   );
 }
