@@ -1,18 +1,21 @@
-import React from "react";
-import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
+import React from 'react';
+import './Header.css';
+import SearchIcon from '@material-ui/icons/Search';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div className="header">
-      <img
-        className="header--logo"
-        src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-        alt="amazon"
-      />
-      <LocationOnOutlinedIcon />
+      <Link to="/">
+        <img
+          className="header--logo"
+          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="amazon"
+        />
+        <LocationOnOutlinedIcon />
+      </Link>
 
       <span className="header--text">
         <span className="header--optionLineOne">Hello</span>
@@ -41,10 +44,12 @@ function Header() {
           <span className="header--optionLineTwo">Prime</span>
         </div>
 
-        <div className="header--optionBasket">
-          <ShoppingCartIcon />
-          <span className="header--optionLineTwo header--basketCount">0</span>
-        </div>
+        <Link to="/checkout">
+          <div className="header--optionBasket">
+            <ShoppingCartIcon />
+            <span className="header--optionLineTwo header--basketCount">0</span>
+          </div>
+        </Link>
       </div>
     </div>
   );
